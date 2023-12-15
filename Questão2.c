@@ -28,17 +28,16 @@ int main() {
 
     struct aluno alunos[TAM_ALUNOS]; 
     int i;
-
     
     for (i = 0; i < TAM_ALUNOS; ++i) {
-        printf("\nDados do %dº aluno(a) \n", i + 1);
+        printf("\nDados do %dÂº aluno(a) \n", i + 1);
         printf("Informe o nome: ");
         scanf("%s", alunos[i].nome);
         printf("Informe a data de nascimento: ");
         scanf("%s", alunos[i].datanascimento); 
-        printf("Informe a 1º nota: ");
+        printf("Informe a 1Âº nota: ");
         scanf("%f", &alunos[i].nota1);
-        printf("Informe a 2º nota: ");
+        printf("Informe a 2Âº nota: ");
         scanf("%f", &alunos[i].nota2);
         
         alunos[i].media = calcularmedia(alunos[i]);
@@ -50,7 +49,7 @@ int main() {
     for (i = 0; i < TAM_ALUNOS; ++i) {
         printf("\nAluno(a): %s \n", alunos[i].nome);
         printf("Data de nascimento: %s \n", alunos[i].datanascimento);
-        printf("Média: %.2f\n", alunos[i].media);
+        printf("MÃ©dia: %.2f\n", alunos[i].media);
         situacao(alunos[i]);
     }
 
